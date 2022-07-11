@@ -101,9 +101,6 @@ let fullDeck = new Deck();
 let player1 = new Player(`Das`);
 let player2 = new Player(`Pownin`);
 
-console.log(player1);
-console.log(player2);
-
 let startGame=new StartGame(fullDeck,[player1, player2])
 
 startGame.shuffleCards();
