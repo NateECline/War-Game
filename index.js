@@ -76,19 +76,19 @@ class StartGame {
           player1Score++
           console.log(`Round ${i}:
           ${this.players[0].name} has greater value.
-          ${this.players[0].name}: ${this.players[0].hand[i].suit} of ${this.players[0].hand[i].rank} score: ${player1Score}
-          ${this.players[1].name}: ${this.players[1].hand[i].suit} of ${this.players[1].hand[i].rank} score: ${player2Score}`)
+          ${this.players[0].name}: ${this.players[0].hand[i].rank} of ${this.players[0].hand[i].suit} score: ${player1Score}
+          ${this.players[1].name}: ${this.players[1].hand[i].rank} of ${this.players[1].hand[i].suit} score: ${player2Score}`)
       } else if(this.players[0].hand[i].value < this.players[1].hand[i].value){
           player2Score++
           console.log(`Round ${i}:
           ${this.players[1].name} has greater value.
-          ${this.players[0].name}: ${this.players[0].hand[i].suit} of ${this.players[0].hand[i].rank} score: ${player1Score}
-          ${this.players[1].name}: ${this.players[1].hand[i].suit} of ${this.players[1].hand[i].rank} score: ${player2Score}`)
+          ${this.players[0].name}: ${this.players[0].hand[i].rank} of ${this.players[0].hand[i].suit} score: ${player1Score}
+          ${this.players[1].name}: ${this.players[1].hand[i].rank} of ${this.players[1].hand[i].suit} score: ${player2Score}`)
       } else{
           console.log(`Round ${i}:
           It is a tie. 
-          ${this.players[0].name}: ${this.players[0].hand[i].suit} of ${this.players[0].hand[i].rank} score: ${player1Score}
-          ${this.players[1].name}: ${this.players[1].hand[i].suit} of ${this.players[1].hand[i].rank} score: ${player1Score}`)
+          ${this.players[0].name}: ${this.players[0].hand[i].rank} of ${this.players[0].hand[i].suit} score: ${player1Score}
+          ${this.players[1].name}: ${this.players[1].hand[i].rank} of ${this.players[1].hand[i].suit} score: ${player1Score}`)
       }}
 
       playersScore.push(player1Score, player2Score)
